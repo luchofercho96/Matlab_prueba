@@ -3,7 +3,8 @@ clear all;
 %creamos u obtenemos los datos que queremos enviar hacia le memoria
 %compartida
 vector = [2,2,5,8,2,2];
-
+vector_1=[5,5,5,2,7];
+vector_3=[5,2,8,2,3];
 %importar la dll de la memoria
 loadlibrary('smClient64.dll','./smClient.h');
 
