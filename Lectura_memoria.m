@@ -1,7 +1,7 @@
 %importamos memoria compartida
 loadlibrary('smClient64.dll','./smClient.h')
 % creamos la memoria compartida
-
+a=45;
 % abrir memoria compartida
 calllib('smClient64','openMemory','menEntero',1)
 % escribir memoria compartida
@@ -16,6 +16,6 @@ x=0;
 for k=1:length(t)
     x=x+1;
     calllib('smClient64','setInt','menEntero',0,x)
-    pause(0.1);
+
 end
 calllib('smClient64','freeMemories')
